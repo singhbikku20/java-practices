@@ -13,6 +13,7 @@ public class ScannerValueRead {
         System.out.println("Enter a Double number: ");
         double dobleNum = scanner.nextDouble();
         System.out.println("Enter a Text: ");
+        scanner.nextLine();
         String stringValue = scanner.nextLine();
 
         System.out.println("Integer number: " + intNum);
