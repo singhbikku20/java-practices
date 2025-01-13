@@ -7,7 +7,12 @@ import java.util.ArrayList;
 public class Bank {
 
     private String name;
-    private ArrayList<BankAccount> accounts = new ArrayList<>();
+    private ArrayList<BankAccount> accounts;
+
+    Bank(String name){
+        this.name = name;
+        accounts = new ArrayList<BankAccount>();
+    }
 
     public void addAccount(BankAccount account){
         accounts.add(account);
@@ -23,8 +28,7 @@ public class Bank {
 
 
     public static void main(String[] args) {
-        Bank bank = new Bank();
-        bank.name = "ICICI Bank";
+        Bank bank = new Bank("ICICI Bank");
         BankAccount bankAccount1 = new BankAccount();
         BankAccount bankAccount2 = new BankAccount();
         BankAccount bankAccount3 = new BankAccount();
